@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bold Films Wedding · Filmes de Casamento</title>
+<meta name="description" content="Filmes de casamento com emoção, narrativa e estética de cinema. Itaberaba, Santo Antônio de Jesus, São Paulo e todo o Brasil. Consulte sua data pelo WhatsApp.">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:title" content="Bold Films Wedding · Filmes de Casamento">
+<meta property="og:description" content="O casamento dura um dia. O filme, a vida inteira. Consulte a disponibilidade da sua data.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --white:#ffffff;
+  --cream:#f7f6f3;
+  --line:#e7e4de;
+  --ink:#111111;
+  --text:#3b3b3b;
+  --muted:#8b8780;
+  --wa:#1faa59;
+  --wa-dark:#178a48;
+  --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --sans:"Neue Haas Grotesk Text Pro","Inter",Helvetica,Arial,sans-serif;
+  --pad:24px;
+  --max:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);font-weight:400;background:var(--white);color:var(--text);line-height:1.65;font-size:16px;-webkit-font-smoothing:antialiased;padding-bottom:86px}
+img,iframe{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+.narrow{max-width:720px}
+.center{text-align:center;margin-left:auto;margin-right:auto}
+
+.eyebrow{display:inline-block;font-size:11px;font-weight:500;letter-spacing:.32em;text-transform:uppercase;color:var(--muted)}
+h1,h2,h3{font-family:var(--serif);font-weight:500;color:var(--ink);letter-spacing:-.01em;line-height:1.05}
+h2{font-size:clamp(38px,10vw,62px);margin:14px 0 18px}
+h2 em,h1 em{font-style:italic;font-weight:400}
+.lead{font-size:17px;color:var(--text);max-width:560px;font-weight:300}
+.center.lead{margin-left:auto;margin-right:auto}
+section{padding:88px 0}
+.cream{background:var(--cream)}
+.rule{width:44px;height:1px;background:var(--ink);margin:26px auto;opacity:.5}
+
+/* ---------- Botões ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:56px;padding:0 30px;border-radius:999px;font-family:var(--sans);font-weight:500;font-size:15px;letter-spacing:.02em;border:1px solid var(--ink);cursor:pointer;transition:background .2s,color .2s,transform .15s}
+.btn:active{transform:scale(.98)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:#2a2a2a}
+.btn-line{background:transparent;color:var(--ink)}
+.btn-line:hover{background:var(--ink);color:#fff}
+.btn-wa{background:var(--wa);border-color:var(--wa);color:#fff}
+.btn-wa:hover{background:var(--wa-dark)}
+.btn svg{width:19px;height:19px;flex:none}
+.micro{font-size:13px;color:var(--muted);margin-top:14px;font-weight:300}
+
+/* ---------- Header ---------- */
+header{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:border-color .3s}
+header.scrolled{border-bottom-color:var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
+.logo-sm img{height:40px;width:auto;mix-blend-mode:multiply}
+.head-wa{font-size:12px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);border-bottom:1px solid var(--ink);padding-bottom:2px}
+
+/* ---------- Hero ---------- */
+.hero{padding:44px 0 72px;text-align:center}
+.hero-logo{width:min(230px,58vw);margin:0 auto 34px;mix-blend-mode:multiply}
+.hero h1{font-size:clamp(46px,12.5vw,96px);margin:18px auto 22px;max-width:900px}
+.hero .lead{margin:0 auto 34px;text-align:center}
+
+.date-box{max-width:520px;margin:0 auto;text-align:left;border:1px solid var(--line);border-radius:22px;padding:22px;background:var(--white);box-shadow:0 20px 60px -30px rgba(0,0,0,.18)}
+.date-row{display:grid;grid-template-columns:1fr;gap:14px;margin-bottom:16px}
+.field label{display:block;font-size:11px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.field input{width:100%;height:50px;border:0;border-bottom:1px solid var(--line);background:transparent;font:inherit;font-size:17px;color:var(--ink);padding:0 2px;border-radius:0;-webkit-appearance:none;appearance:none}
+.field input:focus{outline:none;border-bottom-color:var(--ink)}
+.field input::placeholder{color:#b9b5ae}
+.date-box .micro{text-align:center}
+
+/* ---------- Filme destaque ---------- */
+.yt{position:relative;aspect-ratio:16/9;background:#000;overflow:hidden;cursor:pointer;border-radius:4px}
+.yt img{width:100%;height:100%;object-fit:cover;transition:transform .8s ease,opacity .3s}
+.yt:hover img{transform:scale(1.03)}
+.yt::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 50%,rgba(0,0,0,.45))}
+.yt .play{position:absolute;z-index:2;left:50%;top:50%;transform:translate(-50%,-50%);width:74px;height:74px;border-radius:50%;background:rgba(255,255,255,.95);display:flex;align-items:center;justify-content:center;transition:transform .2s}
+.yt:hover .play{transform:translate(-50%,-50%) scale(1.06)}
+.yt .play::before{content:"";border-left:16px solid var(--ink);border-top:10px solid transparent;border-bottom:10px solid transparent;margin-left:5px}
+.yt .cap{position:absolute;z-index:2;left:18px;bottom:14px;color:#fff;font-size:11px;letter-spacing:.24em;text-transform:uppercase;font-weight:500}
+.yt iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.films{display:grid;gap:18px;margin-top:40px}
+.films-cta{margin-top:40px;text-align:center}
+
+
+/* ---------- Imagem do hero ---------- */
+.hero-img{margin-top:56px}
+.hero-img img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:52% center;border-radius:4px}
+.hero-img figcaption{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);margin-top:12px}
+
+/* ---------- Filmes (3) ---------- */
+.films-feat{margin-top:40px}
+.films-sub{display:grid;gap:18px;margin-top:18px}
+
+/* ---------- Galeria ---------- */
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:44px;grid-auto-flow:dense}
+.gallery figure{position:relative;overflow:hidden;border-radius:3px;background:var(--cream)}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s ease}
+.gallery figure:hover img{transform:scale(1.04)}
+.gallery .w{grid-column:span 2;aspect-ratio:16/9}
+.gallery .t{grid-row:span 2}
+.gallery .s{aspect-ratio:1/1}
+
+/* ---------- Bastidores ---------- */
+.crew{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:40px}
+.crew img{width:100%;height:100%;object-fit:cover;border-radius:3px}
+.crew .a{grid-row:span 2}
+.crew .c{grid-column:span 2;aspect-ratio:3/2}
+.crew-points{list-style:none;margin-top:34px;display:grid;gap:0;border-top:1px solid var(--line)}
+.crew-points li{padding:18px 0;border-bottom:1px solid var(--line);font-size:15px;font-weight:300}
+.crew-points b{font-family:var(--serif);font-weight:500;font-size:22px;color:var(--ink);display:block;line-height:1.2;margin-bottom:2px}
+
+/* ---------- Manifesto / diferenciais ---------- */
+.quote-big{font-family:var(--serif);font-size:clamp(28px,7.4vw,46px);line-height:1.2;color:var(--ink);font-weight:400;text-align:center;max-width:860px;margin:0 auto}
+.quote-big em{font-style:italic}
+.pillars{display:grid;gap:0;margin-top:56px;border-top:1px solid var(--line)}
+.pillar{padding:26px 0;border-bottom:1px solid var(--line)}
+.pillar .num{font-family:var(--serif);font-style:italic;font-size:20px;color:var(--muted)}
+.pillar b{display:block;font-family:var(--serif);font-weight:500;font-size:26px;color:var(--ink);margin:2px 0 6px}
+.pillar span{font-size:15px;font-weight:300}
+.gear{margin-top:40px;text-align:center;font-size:13px;color:var(--muted);letter-spacing:.04em}
+.gear strong{font-weight:500;color:var(--text)}
+
+
+/* ---------- Entrega ---------- */
+.delivery{background:#0e0e0e;color:#d8d5cf}
+.delivery .eyebrow{color:#9a958c}
+.delivery h2{color:#fff}
+.delivery .lead{color:#c9c5be}
+.del-grid{display:grid;gap:40px;margin-top:44px;align-items:center}
+.del-photos{display:grid;grid-template-columns:1fr;gap:12px;align-items:start}
+.del-photos img{width:100%;height:auto;border-radius:4px}
+
+.del-list{list-style:none;border-top:1px solid #2a2a2a}
+.del-list li{padding:22px 0;border-bottom:1px solid #2a2a2a}
+.del-list .n{font-family:var(--serif);font-style:italic;color:#8d887f;font-size:18px}
+.del-list b{display:block;font-family:var(--serif);font-weight:500;font-size:26px;color:#fff;line-height:1.15;margin:2px 0 6px}
+.del-list span{font-size:15px;font-weight:300}
+.del-note{font-size:13px;color:#8d887f;margin-top:22px;font-weight:300}
+.delivery .btn-light{background:#fff;color:var(--ink);border-color:#fff;margin-top:30px}
+.delivery .btn-light:hover{background:#e9e7e2}
+@media (min-width:720px){
+  .hero-img img{aspect-ratio:21/9}
+  .films-sub{grid-template-columns:1fr 1fr}
+  .gallery{grid-template-columns:repeat(4,1fr);gap:12px}
+  .gallery .s{aspect-ratio:auto}
+  .crew-wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:center}
+  .crew{margin-top:0}
+  .crew-points{grid-template-columns:1fr}
+  .del-grid{grid-template-columns:1.25fr 1fr;gap:56px}
+  .del-photos{grid-template-columns:1fr 1fr;align-items:center}
+}
+
+/* ---------- Planos ---------- */
+.plans{display:grid;gap:18px;margin-top:44px}
+.plan{position:relative;background:var(--white);border:1px solid var(--line);border-radius:6px;padding:34px 26px 28px;display:flex;flex-direction:column}
+.plan.featured{border-color:var(--ink);box-shadow:0 30px 70px -40px rgba(0,0,0,.35)}
+.plan .tag{position:absolute;top:-12px;left:50%;transform:translateX(-50%);white-space:nowrap;background:var(--ink);color:#fff;font-size:10px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;padding:6px 14px;border-radius:999px}
+.plan .kicker{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);text-align:center}
+.plan h3{font-size:40px;text-align:center;margin:4px 0 6px}
+.plan .price{text-align:center;padding:18px 0 22px;border-bottom:1px solid var(--line);margin-bottom:8px}
+.plan .price small{display:block;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+.plan .price strong{font-family:var(--serif);font-weight:500;font-size:46px;color:var(--ink);letter-spacing:-.01em;line-height:1.1}
+.plan .price strong sup{font-size:.42em;vertical-align:top;position:relative;top:.55em;margin-right:4px;font-weight:400}
+.plan ul{list-style:none;flex:1;margin-bottom:26px}
+.plan li{font-size:15px;font-weight:300;padding:11px 0 11px 24px;position:relative;border-bottom:1px solid #f0eeea}
+.plan li:last-child{border-bottom:0}
+.plan li::before{content:"";position:absolute;left:2px;top:20px;width:8px;height:1px;background:var(--ink)}
+.plan li b{font-weight:500;color:var(--ink)}
+.plan .deliv{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);text-align:center;margin-bottom:18px}
+
+/* ---------- Adicionais ---------- */
+.extras-wrap{margin-top:70px}
+.extras-wrap h3{font-size:34px;text-align:center}
+.extras-wrap .sub{text-align:center;font-size:14px;color:var(--muted);margin:6px 0 28px;font-weight:300}
+.extras{display:grid;gap:0 48px}
+.extra-group h4{font-size:11px;font-weight:500;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);padding:22px 0 8px;border-bottom:1px solid var(--ink)}
+.extra{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+.extra b{display:block;font-weight:500;color:var(--ink);font-size:15px}
+.extra span{display:block;font-size:13px;font-weight:300;color:var(--muted);line-height:1.45;margin-top:2px}
+.extra .v{font-family:var(--serif);font-size:20px;color:var(--ink);white-space:nowrap;font-weight:500}
+.travel{margin-top:30px;padding:20px 22px;border:1px solid var(--line);border-radius:6px;font-size:14px;font-weight:300;text-align:center;background:var(--white)}
+.travel b{font-weight:500;color:var(--ink)}
+
+/* ---------- Depoimentos ---------- */
+.testis{display:grid;gap:0;margin-top:40px}
+.testi{padding:36px 0;border-bottom:1px solid var(--line);text-align:center}
+.testi:last-child{border-bottom:0}
+.testi .mark{font-family:var(--serif);font-size:64px;line-height:.5;color:var(--line);display:block;height:28px}
+.testi blockquote{font-family:var(--serif);font-style:italic;font-size:23px;line-height:1.4;color:var(--ink);max-width:640px;margin:0 auto 18px}
+.testi figcaption{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted)}
+
+/* ---------- Processo ---------- */
+.steps{list-style:none;margin-top:40px;display:grid;gap:0;border-top:1px solid var(--line)}
+.steps li{display:grid;grid-template-columns:56px 1fr;gap:10px;padding:24px 0;border-bottom:1px solid var(--line)}
+.steps .n{font-family:var(--serif);font-style:italic;font-size:28px;color:var(--muted);line-height:1}
+.steps b{display:block;font-family:var(--serif);font-weight:500;font-size:24px;color:var(--ink);line-height:1.1;margin-bottom:6px}
+.steps span{font-size:15px;font-weight:300}
+
+/* ---------- Cidades ---------- */
+.cities{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:30px}
+.cities span{border:1px solid var(--line);border-radius:999px;padding:10px 18px;font-size:14px;color:var(--ink);background:var(--white)}
+.cities span.all{background:var(--ink);color:#fff;border-color:var(--ink)}
+
+/* ---------- FAQ ---------- */
+.faq{margin-top:34px;border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:22px 40px 22px 0;font-family:var(--serif);font-size:22px;font-weight:500;color:var(--ink);position:relative;line-height:1.25}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:4px;top:18px;font-family:var(--sans);font-weight:300;font-size:26px;color:var(--muted);transition:transform .25s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq p{padding:0 0 24px;font-size:15px;font-weight:300;max-width:640px}
+
+/* ---------- Final ---------- */
+.final{text-align:center;padding:110px 0}
+.final h2{font-size:clamp(44px,12vw,80px)}
+.final .lead{margin:0 auto 34px;text-align:center}
+.final .btn{max-width:420px}
+
+footer{border-top:1px solid var(--line);padding:44px 0 50px;text-align:center;font-size:13px;color:var(--muted);font-weight:300}
+footer img{width:120px;margin:0 auto 18px;mix-blend-mode:multiply}
+footer a{color:var(--ink);border-bottom:1px solid var(--line)}
+footer p+p{margin-top:4px}
+
+/* ---------- WhatsApp fixo ---------- */
+.wa-bar{position:fixed;left:0;right:0;bottom:0;z-index:50;padding:12px var(--pad) calc(12px + env(safe-area-inset-bottom));background:rgba(255,255,255,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid var(--line);transition:transform .3s ease}
+.wa-bar .btn{min-height:52px}
+.wa-float{display:none}
+
+/* ---------- Animação ---------- */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .9s ease,transform .9s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+/* =========================================================
+   Tablet / Desktop
+   ========================================================= */
+@media (min-width:720px){
+  :root{--pad:44px}
+  section{padding:130px 0}
+  .btn{width:auto}
+  .date-row{grid-template-columns:1fr 1fr}
+  .films{grid-template-columns:1fr 1fr}
+  .pillars{grid-template-columns:repeat(3,1fr);gap:40px;border-top:0}
+  .pillar{border-bottom:0;border-top:1px solid var(--ink);padding-top:22px}
+  .plans{grid-template-columns:repeat(3,1fr);align-items:stretch}
+  .extras{grid-template-columns:1fr 1fr}
+  .testis{grid-template-columns:repeat(3,1fr);gap:40px}
+  .testi{border-bottom:0;padding:10px 0}
+  .testi blockquote{font-size:21px}
+  .steps{grid-template-columns:repeat(4,1fr);gap:32px;border-top:0}
+  .steps li{grid-template-columns:1fr;border-bottom:0;border-top:1px solid var(--ink);padding-top:20px}
+  .logo-sm img{height:46px}
+}
+@media (min-width:960px){
+  body{padding-bottom:0}
+  .wa-bar{display:none}
+  .wa-float{display:flex;position:fixed;right:28px;bottom:28px;z-index:50;align-items:center;gap:10px;background:var(--wa);color:#fff;font-weight:500;font-size:14px;letter-spacing:.02em;padding:14px 22px 14px 18px;border-radius:999px;box-shadow:0 14px 34px -10px rgba(0,0,0,.3);transition:background .2s,transform .2s}
+  .wa-float:hover{background:var(--wa-dark);transform:translateY(-2px)}
+  .wa-float svg{width:22px;height:22px}
+  .plan.featured{transform:translateY(-14px)}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.22-8.24 8.22Zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.29Z"/></symbol>
+</svg>
+
+<header id="hdr">
+  <div class="wrap">
+    <a href="#topo" class="logo-sm" aria-label="Bold Films Wedding"><img src="img/logo.png" alt="Bold Films Wedding"></a>
+    <a href="#" class="head-wa js-wa" data-origem="header">Consultar data</a>
+  </div>
+</header>
+
+<main id="topo">
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="wrap">
+    <img class="hero-logo reveal" src="img/logo.png" alt="Bold Films Wedding">
+    <span class="eyebrow">Filmes de casamento</span>
+    <h1>O casamento dura um dia. <em>O filme, a vida inteira.</em></h1>
+    <p class="lead">Emoção verdadeira, narrativa e estética de cinema. Itaberaba, Santo Antônio de Jesus, São Paulo e onde vocês disserem sim.</p>
+
+    <form class="date-box" id="dateForm" novalidate>
+      <div class="date-row">
+        <div class="field">
+          <label for="f-data">Data do casamento</label>
+          <input id="f-data" type="date">
+        </div>
+        <div class="field">
+          <label for="f-cidade">Cidade</label>
+          <input id="f-cidade" type="text" placeholder="Ex.: Itaberaba" autocomplete="address-level2">
+        </div>
+      </div>
+      <button type="submit" class="btn btn-dark" style="width:100%">
+        <svg><use href="#wa"/></svg> Consultar disponibilidade
+      </button>
+      <p class="micro">Resposta direta da nossa equipe, pelo WhatsApp. Sem compromisso.</p>
+    </form>
+
+    <figure class="hero-img reveal">
+      <img src="img/saida-petalas.webp" fetchpriority="high" alt="Noivos saindo da cerimônia sob chuva de pétalas">
+    </figure>
+  </div>
+</section>
+
+<!-- ================= FILMES ================= -->
+<section class="cream" id="filmes">
+  <div class="wrap">
+    <div class="center reveal" style="text-align:center">
+      <span class="eyebrow">Nossos filmes</span>
+      <h2>Assista <em>e sinta.</em></h2>
+      <p class="lead center">Não compilamos cenas. Construímos narrativa, ritmo e emoção.</p>
+    </div>
+    <div class="films-feat reveal">
+      <div class="yt" data-id="sLLqORkmkhM" role="button" tabindex="0" aria-label="Assistir ao filme de Ivan e Adriana">
+        <img src="https://i.ytimg.com/vi/sLLqORkmkhM/hqdefault.jpg" alt="Filme Ivan e Adriana, Bold Films" loading="lazy">
+        <span class="play"></span><span class="cap">Ivan &amp; Adriana</span>
+      </div>
+    </div>
+    <div class="films-sub reveal">
+      <div class="yt" data-id="xUQsJBX8VDw" role="button" tabindex="0" aria-label="Assistir ao filme de Larissa e Eliezer">
+        <img src="https://i.ytimg.com/vi/xUQsJBX8VDw/hqdefault.jpg" alt="Filme Larissa e Eliezer, Bold Films" loading="lazy">
+        <span class="play"></span><span class="cap">Larissa &amp; Eliezer</span>
+      </div>
+      <div class="yt" data-id="VV2EOTmAP5Q" role="button" tabindex="0" aria-label="Assistir ao making of da Fernanda">
+        <img src="https://i.ytimg.com/vi/VV2EOTmAP5Q/hqdefault.jpg" alt="Making of da noiva Fernanda, Bold Films" loading="lazy">
+        <span class="play"></span><span class="cap">Making of · Fernanda</span>
+      </div>
+    </div>
+    <div class="films-cta reveal">
+      <a href="#" class="btn btn-dark js-wa" data-origem="filmes" data-msg="Olá, Bold Films! Assisti aos filmes de vocês e quero saber se minha data está disponível."><svg><use href="#wa"/></svg> Quero um filme assim</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALERIA ================= -->
+<section id="momentos">
+  <div class="wrap">
+    <div class="reveal" style="text-align:center">
+      <span class="eyebrow">Momentos</span>
+      <h2>Frames de <em>histórias reais.</em></h2>
+      <p class="lead center">Cada imagem abaixo saiu de um casamento que filmamos.</p>
+    </div>
+    <div class="gallery reveal">
+      <figure class="w"><img src="img/beijo-faiscas.webp" alt="Beijo dos noivos entre faíscas" loading="lazy" decoding="async"></figure>
+      <figure class="t"><img src="img/casal-caminhando.webp" alt="Noivos caminhando sob as luzes" loading="lazy" decoding="async"></figure>
+      <figure class="s"><img src="img/noiva-buque.webp" alt="Noiva com buquê de orquídeas" loading="lazy" decoding="async"></figure>
+      <figure class="s"><img src="img/noiva-emocao.webp" alt="Noiva emocionada durante os votos" loading="lazy" decoding="async"></figure>
+      <figure class="w"><img src="img/beijo-noite.webp" alt="Beijo dos noivos na saída da cerimônia" loading="lazy" decoding="async"></figure>
+      <figure class="s"><img src="img/noiva-making.webp" alt="Noiva sorrindo no making of" loading="lazy" decoding="async"></figure>
+      <figure class="t"><img src="img/casal-coreto.webp" alt="Noivos no coreto" loading="lazy" decoding="async"></figure>
+      <figure class="s"><img src="img/noiva-buque-janela.webp" alt="Noiva com o buquê, refletida na janela" loading="lazy" decoding="async"></figure>
+      <figure class="w"><img src="img/casal-retrato.webp" alt="Retrato dos noivos à noite" loading="lazy" decoding="async"></figure>
+      <figure class="w"><img src="img/noiva-retrato.webp" alt="Retrato da noiva" loading="lazy" decoding="async"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= POR QUE A BOLD ================= -->
+<section class="cream">
+  <div class="wrap">
+    <p class="quote-big reveal">Registramos os olhares, os gestos e as palavras que ninguém ensaiou. <em>É isso que constrói a essência do casamento.</em></p>
+    <div class="rule"></div>
+    <div class="pillars reveal">
+      <div class="pillar"><span class="num">i.</span><b>Captação emocional</b><span>Momentos espontâneos e olhares verdadeiros, com equipe pontual e discreta durante todo o evento.</span></div>
+      <div class="pillar"><span class="num">ii.</span><b>Narrativa de cinema</b><span>Edição com ritmo e intenção. Imagens limpas, composição cuidadosa e cores atemporais.</span></div>
+      <div class="pillar"><span class="num">iii.</span><b>Postura profissional</b><span>Pontualidade, discrição e comunicação clara do primeiro contato à entrega do filme.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BASTIDORES ================= -->
+<section>
+  <div class="wrap">
+    <div class="reveal" style="text-align:center">
+      <span class="eyebrow">Bastidores</span>
+      <h2>Quem estará <em>com vocês.</em></h2>
+      <p class="lead center">Uma equipe que vocês nem vão perceber trabalhando, mas vão agradecer quando assistirem ao filme.</p>
+    </div>
+    <div class="crew-wrap" style="margin-top:44px">
+      <div class="crew reveal">
+        <img class="a" src="img/bastidor-camera.webp" alt="Câmera Sony em gimbal no altar de flores" loading="lazy" decoding="async">
+        <img src="img/equipe-2.webp" alt="Equipe Bold Films em frente ao arco de flores" loading="lazy" decoding="async">
+        <img src="img/equipe-1.webp" alt="Equipe Bold Films com câmeras e intercom" loading="lazy" decoding="async">
+        <img class="c" src="img/equipe-casal.webp" alt="Noivos com a equipe Bold Films" loading="lazy" decoding="async">
+      </div>
+      <ul class="crew-points reveal">
+        <li><b>Equipe uniformizada e discreta</b>Todos de preto, comunicando por rádio, sem atrapalhar convidados nem cerimonial.</li>
+        <li><b>Equipamento de cinema</b>Sony FX30 Cinema Line, estabilizador, drones DJI Air 3S e Avata 2 FPV, áudio Hollyland Lark e iluminação profissional.</li>
+        <li><b>Do making of à última música</b>Chegamos antes, ficamos até o fim e alinhamos tudo com fotografia e cerimonial.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ENTREGA ================= -->
+<section class="delivery" id="entrega">
+  <div class="wrap">
+    <div class="reveal" style="text-align:center">
+      <span class="eyebrow">A entrega</span>
+      <h2>O filme de vocês <em>chega como presente.</em></h2>
+      <p class="lead center">Nada de link perdido no meio das conversas. A história de vocês é entregue numa caixa feita para ser aberta com calma e guardada para sempre.</p>
+    </div>
+    <div class="del-grid">
+      <div class="del-photos reveal">
+        <img src="img/caixa-completa.webp" alt="Caixa presente Bold Films com o pendrive em madeira" loading="lazy" decoding="async">
+        <img src="img/pendrive.webp" alt="Pendrive em madeira com a logo Bold Films gravada a laser" loading="lazy" decoding="async">
+      </div>
+      <div class="reveal">
+        <ul class="del-list">
+          <li><span class="n">i.</span><b>A caixa</b><span>Caixa preta rígida, personalizada, com acabamento de presente e um mimo para os noivos. O primeiro momento de emoção acontece antes do play.</span></li>
+          <li><span class="n">ii.</span><b>O pendrive em madeira</b><span>Gravado a laser com a nossa marca na frente e, no fundo, o nome dos noivos. Dentro dele, o filme oficial e o teaser em alta qualidade, prontos para TV, computador ou celular.</span></li>
+          <li><span class="n">iii.</span><b>A Caixa Memória Bold</b><span>Nos planos Completo e Master, a caixa ganha uma câmera retrô. No Master, vocês também recebem o download online para assistir de qualquer lugar.</span></li>
+          <li><span class="n">iv.</span><b>Para quem vocês amam</b><span>Pais e padrinhos também podem ganhar o filme na própria caixa presente, a partir de R$ 290.</span></li>
+        </ul>
+        <p class="del-note">Todos os planos incluem pendrive personalizado em caixa presente.</p>
+        <a href="#" class="btn btn-light js-wa" data-origem="entrega" data-msg="Olá, Bold Films! Amei a caixa de entrega do filme. Quero saber se minha data está disponível."><svg><use href="#wa"/></svg> Quero receber o meu assim</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PLANOS ================= -->
+<section class="cream" id="planos">
+  <div class="wrap">
+    <div class="reveal" style="text-align:center">
+      <span class="eyebrow">Investimento 2027</span>
+      <h2>Três planos, <em>uma só essência.</em></h2>
+      <p class="lead center">Cada plano define o tamanho da equipe e a profundidade da história contada.</p>
+    </div>
+
+    <div class="plans reveal">
+      <article class="plan">
+        <span class="kicker">Plano</span>
+        <h3>Essencial</h3>
+        <div class="price"><small>Investimento</small><strong><sup>R$</sup>4.890</strong></div>
+        <ul>
+          <li>1 cinegrafista + 1 piloto de drone (que atua também como 2ª câmera)</li>
+          <li>Cobertura da cerimônia + recepção</li>
+          <li>Drone incluso</li>
+          <li><b>Filme oficial</b> (7–10 min)</li>
+          <li>Teaser (60s)</li>
+          <li>Pendrive personalizado em caixa presente</li>
+        </ul>
+        <p class="deliv">Entrega em 30 dias úteis</p>
+        <a href="#" class="btn btn-line js-wa" data-origem="plano-essencial" data-pacote="Essencial">Quero o Essencial</a>
+      </article>
+
+      <article class="plan featured">
+        <span class="tag">Mais contratado</span>
+        <span class="kicker">Plano</span>
+        <h3>Completo</h3>
+        <div class="price"><small>Investimento</small><strong><sup>R$</sup>6.690</strong></div>
+        <ul>
+          <li>Making of dos noivos</li>
+          <li>Cobertura completa (cerimônia, recepção e festa)</li>
+          <li>1 filmmaker + piloto de drone + <b>storymaker</b></li>
+          <li>Drone incluso</li>
+          <li><b>Filme oficial</b> (10–15 min)</li>
+          <li>Teaser (60s)</li>
+          <li><b>Caixa Memória Bold:</b> pendrive em madeira gravado + câmera retrô</li>
+        </ul>
+        <p class="deliv">Entrega em 20 dias úteis</p>
+        <a href="#" class="btn btn-dark js-wa" data-origem="plano-completo" data-pacote="Completo"><svg><use href="#wa"/></svg> Quero o Completo</a>
+      </article>
+
+      <article class="plan">
+        <span class="kicker">Plano</span>
+        <h3>Master</h3>
+        <div class="price"><small>Investimento</small><strong><sup>R$</sup>9.490</strong></div>
+        <ul>
+          <li>Making of dos noivos</li>
+          <li>Cobertura completa estendida</li>
+          <li>Drone convencional + <b>drone FPV</b></li>
+          <li>Storymaker incluso</li>
+          <li><b>Mini documentário</b> com depoimentos</li>
+          <li>Teaser cinematográfico (1:20 min)</li>
+          <li><b>Filme oficial</b> (15–20 min)</li>
+          <li>Caixa Memória Bold + download online</li>
+        </ul>
+        <p class="deliv">Entrega em 10 dias úteis</p>
+        <a href="#" class="btn btn-line js-wa" data-origem="plano-master" data-pacote="Master">Quero o Master</a>
+      </article>
+    </div>
+
+    <!-- Adicionais -->
+    <div class="extras-wrap reveal">
+      <h3>Para deixar <em>ainda mais seu</em></h3>
+      <p class="sub">Serviços adicionais, combináveis com qualquer plano.</p>
+      <div class="extras">
+        <div class="extra-group">
+          <h4>No grande dia</h4>
+          <div class="extra"><div><b>Storymaker</b><span>Vídeos verticais dos melhores momentos para Instagram e TikTok.</span></div><div class="v">R$ 990</div></div>
+          <div class="extra"><div><b>Segundo cinegrafista</b><span>Mais um ângulo em cada momento importante.</span></div><div class="v">R$ 1.490</div></div>
+          <div class="extra"><div><b>Same Day Edit</b><span>Resumo do dia editado durante o evento e exibido na festa.</span></div><div class="v">R$ 1.990</div></div>
+          <div class="extra"><div><b>Live do casamento</b><span>Transmissão em tempo real. A noiva pode rever a própria entrada logo após a cerimônia.</span></div><div class="v">R$ 1.190</div></div>
+          <div class="extra"><div><b>Fotografia</b><span>Cobertura fotográfica completa, com fotos tratadas.</span></div><div class="v">R$ 2.490</div></div>
+          <div class="extra"><div><b>Mensagem dos convidados</b><span>Depoimentos de amigos e família num vídeo surpresa.</span></div><div class="v">R$ 490</div></div>
+          <div class="extra"><div><b>Hora extra de cobertura</b><span>Para a festa que não pode parar antes da hora.</span></div><div class="v">R$ 450/h</div></div>
+        </div>
+        <div class="extra-group">
+          <h4>Antes e depois do dia</h4>
+          <div class="extra"><div><b>Pré-Wedding</b><span>Ensaio cinematográfico contando a história do casal.</span></div><div class="v">R$ 2.290</div></div>
+          <div class="extra"><div><b>Mini documentário</b><span>Entrevistas com noivos e padrinhos.</span></div><div class="v">R$ 690</div></div>
+          <div class="extra"><div><b>Pacote 3 reels extras</b><span>Três vídeos verticais editados para postar depois.</span></div><div class="v">R$ 590</div></div>
+          <div class="extra"><div><b>Entrega expressa</b><span>O filme pronto em até 5 dias úteis.</span></div><div class="v">R$ 990</div></div>
+          <div class="extra"><div><b>Kit presente para pais e padrinhos</b><span>Pendrive com o filme em caixa presente. Com câmera retrô: R$ 590.</span></div><div class="v">R$ 290</div></div>
+          <div class="extra"><div><b>Material bruto</b><span>Todo o material captado no dia, sem edição.</span></div><div class="v">R$ 490</div></div>
+        </div>
+      </div>
+      <p class="travel"><b>Casamentos em outras cidades do Brasil:</b> deslocamento de R$ 2,00 por km rodado + hospedagem quando necessário.</p>
+    </div>
+
+    <div class="films-cta reveal">
+      <a href="#" class="btn btn-dark js-wa" data-origem="planos" data-msg="Olá, Bold Films! Vi os planos de casamento 2027 e quero montar o meu. Minha data está disponível?"><svg><use href="#wa"/></svg> Montar meu plano no WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DEPOIMENTOS ================= -->
+<section>
+  <div class="wrap">
+    <div class="reveal" style="text-align:center">
+      <span class="eyebrow">Depoimentos</span>
+      <h2>Quem viveu, <em>conta.</em></h2>
+    </div>
+    <div class="testis reveal">
+      <figure class="testi">
+        <span class="mark">“</span>
+        <blockquote>A gente queria algo especial para comemorar nossas Bodas de Coral, mas nunca imaginamos que seria tão emocionante! Quando assistimos ao filme, parecia que estávamos revivendo cada momento daquele dia. Foi muito mais do que esperávamos!</blockquote>
+        <figcaption>Ivan e Adriana</figcaption>
+      </figure>
+      <figure class="testi">
+        <span class="mark">“</span>
+        <blockquote>Nós queríamos um vídeo que fosse além das imagens bonitas, queríamos sentir a emoção de cada momento novamente. E foi isso que a Bold Films entregou! Assistimos ao nosso vídeo várias vezes e sempre nos emocionamos.</blockquote>
+        <figcaption>Márcio e Débora</figcaption>
+      </figure>
+      <figure class="testi">
+        <span class="mark">“</span>
+        <blockquote>Já conhecíamos o trabalho deles, mas… quando recebemos o vídeo, não conseguimos conter as lágrimas. Era exatamente como sonhamos! A Bold Films eternizou nosso momento de uma maneira única e especial.</blockquote>
+        <figcaption>Samuel e Tamilles</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COMO FUNCIONA ================= -->
+<section class="cream">
+  <div class="wrap">
+    <div class="reveal" style="text-align:center">
+      <span class="eyebrow">Como funciona</span>
+      <h2>Leve, claro <em>e especial.</em></h2>
+    </div>
+    <ol class="steps reveal">
+      <li><span class="n">01</span><div><b>Chamem no WhatsApp</b><span>Mandem a data e a cidade. Confirmamos se a data está livre.</span></div></li>
+      <li><span class="n">02</span><div><b>Escolham o plano</b><span>Entendemos o estilo de vocês e ajustamos a cobertura.</span></div></li>
+      <li><span class="n">03</span><div><b>Reservem a data</b><span>Contrato assinado e 50% de entrada. O restante, só na entrega do filme.</span></div></li>
+      <li><span class="n">04</span><div><b>Vivam o dia</b><span>A gente cuida do registro. Vocês recebem o filme pronto para a vida toda.</span></div></li>
+    </ol>
+    <div class="reveal" style="text-align:center;margin-top:60px">
+      <span class="eyebrow">Onde atendemos</span>
+      <div class="cities">
+        <span>Itaberaba</span><span>Santo Antônio de Jesus</span><span>São Paulo</span><span class="all">Todo o Brasil</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section>
+  <div class="wrap narrow">
+    <div class="reveal" style="text-align:center">
+      <span class="eyebrow">Dúvidas</span>
+      <h2>Perguntas <em>frequentes.</em></h2>
+    </div>
+    <div class="faq reveal">
+      <details><summary>Com quanta antecedência devemos reservar?</summary><p>Quanto antes, melhor: cada data recebe um único casamento. Mandem a data no WhatsApp e confirmamos na hora se ela está disponível.</p></details>
+      <details><summary>Como funciona o pagamento?</summary><p>A data é reservada com a assinatura do contrato e 50% de entrada. O saldo é pago na entrega do filme.</p></details>
+      <details><summary>Em quanto tempo recebemos o filme?</summary><p>Depende do plano: 30 dias úteis no Essencial, 20 no Completo e 10 no Master. Com a Entrega expressa, o filme fica pronto em até 5 dias úteis.</p></details>
+      <details><summary>Vocês atendem fora da Bahia?</summary><p>Sim. Atendemos Itaberaba, Santo Antônio de Jesus e São Paulo com frequência e viajamos para todo o Brasil. Para outras cidades, o deslocamento é de R$ 2,00 por km rodado, mais hospedagem quando necessário.</p></details>
+      <details><summary>Quantas pessoas da equipe vão ao casamento?</summary><p>Varia conforme o plano escolhido. Do Essencial (cinegrafista + piloto de drone) ao Master, com equipe ampliada, storymaker e dois drones.</p></details>
+      <details><summary>Dá para personalizar o plano?</summary><p>Sim. Todos os serviços adicionais combinam com qualquer plano: pré-wedding, fotografia, same day edit, live, segundo cinegrafista e outros.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FINAL ================= -->
+<section class="final cream">
+  <div class="wrap">
+    <span class="eyebrow reveal">Reserve sua data</span>
+    <h2 class="reveal">Seu grande dia <em>merece ser eternizado.</em></h2>
+    <p class="lead reveal">Cada data, um único casamento. Vamos conversar e garantir a de vocês.</p>
+    <a href="#" class="btn btn-wa js-wa reveal" data-origem="final"><svg><use href="#wa"/></svg> Consultar minha data no WhatsApp</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <img src="img/logo.png" alt="Bold Films Wedding">
+  <p><a href="https://instagram.com/boldfilmswedding" target="_blank" rel="noopener">@boldfilmswedding</a> · <a href="https://instagram.com/boldfilmsbr" target="_blank" rel="noopener">@boldfilmsbr</a></p>
+  <p>comercial@boldfilms.com · (75) 99189-6051</p>
+  <p>Itaberaba · Santo Antônio de Jesus · São Paulo · © <span id="ano"></span> Bold Films</p>
+</footer>
+
+<div class="wa-bar">
+  <a href="#" class="btn btn-wa js-wa" data-origem="fixo-mobile" style="width:100%"><svg><use href="#wa"/></svg> Consultar disponibilidade da data</a>
+</div>
+<a href="#" class="wa-float js-wa" data-origem="fixo-desktop" aria-label="Falar no WhatsApp"><svg><use href="#wa"/></svg> Consultar minha data</a>
+
+<script>
+/* ===== CONFIGURAÇÃO ===== */
+const WHATSAPP = "5575991896051";
+const MSG_PADRAO = "Olá, Bold Films! Vi a página de casamentos e quero saber se minha data está disponível.";
+/* ======================== */
+
+const waLink = (msg) => `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`;
+function track(origem){
+  try{ if (window.fbq) fbq('track','Contact',{content_name:origem}); }catch(e){}
+  try{ if (window.gtag) gtag('event','whatsapp_click',{origem}); }catch(e){}
+}
+
+document.querySelectorAll('.js-wa').forEach(el=>{
+  let msg = el.dataset.msg || MSG_PADRAO;
+  if (el.dataset.pacote) msg = `Olá, Bold Films! Tenho interesse no Plano ${el.dataset.pacote} para o meu casamento. Minha data está disponível?`;
+  el.href = waLink(msg); el.target = "_blank"; el.rel = "noopener";
+  el.addEventListener('click',()=>track(el.dataset.origem||'link'));
+});
+
+document.getElementById('dateForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  const d = document.getElementById('f-data').value;
+  const c = document.getElementById('f-cidade').value.trim();
+  let msg = "Olá, Bold Films! Quero saber se vocês têm disponibilidade para o meu casamento";
+  if (d){ const [y,m,dd] = d.split('-'); msg += ` no dia ${dd}/${m}/${y}`; }
+  if (c){ msg += ` em ${c}`; }
+  msg += ".";
+  track('hero-form');
+  window.open(waLink(msg),'_blank','noopener');
+});
+
+/* Vídeos do YouTube: só carregam o player ao tocar (página mais rápida) */
+document.querySelectorAll('.yt').forEach(box=>{
+  const img = box.querySelector('img');
+  const hi = new Image();
+  hi.onload = ()=>{ if (hi.naturalWidth > 200) img.src = hi.src; };
+  hi.src = `https://i.ytimg.com/vi/${box.dataset.id}/maxresdefault.jpg`;
+  const play = ()=>{
+    box.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${box.dataset.id}?autoplay=1&rel=0&modestbranding=1&playsinline=1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture" allowfullscreen title="Filme de casamento Bold Films"></iframe>`;
+    box.style.cursor = 'default';
+  };
+  box.addEventListener('click',play,{once:true});
+  box.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); play(); } },{once:true});
+});
+
+/* Header com linha ao rolar */
+const hdr = document.getElementById('hdr');
+addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>10),{passive:true});
+
+/* Esconde a barra fixa enquanto o formulário do topo está visível */
+const bar = document.querySelector('.wa-bar');
+if ('IntersectionObserver' in window){
+  new IntersectionObserver(([en])=>{
+    bar.style.transform = en.isIntersecting ? 'translateY(110%)' : 'translateY(0)';
+  },{threshold:.3}).observe(document.getElementById('dateForm'));
+  const io = new IntersectionObserver(es=>es.forEach(en=>{
+    if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); }
+  }),{threshold:.1});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+} else {
+  document.querySelectorAll('.reveal').forEach(el=>el.classList.add('in'));
+}
+document.getElementById('ano').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
