@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bold Films · Vídeo que gera resultado para empresas</title>
+<meta name="description" content="Estratégia e produção de vídeo para empresas que querem mais autoridade, mais procura e mais vendas. Planos mensais da Bold Films.">
+<meta name="theme-color" content="#0a0a0a">
+<meta property="og:title" content="Bold Films · Plano mensal de vídeo para empresas">
+<meta property="og:description" content="Sua empresa já é referência. Agora precisa parecer.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#0a0a0a; --ink:#111; --g900:#161616; --g800:#1f1f1f; --g700:#2c2c2c;
+  --g500:#7c7c7c; --g400:#9a9a9a; --g300:#c4c4c4; --g100:#ececea; --white:#fafaf9;
+  --wa:#1faa59; --wa-d:#178a48;
+  --sans:"Neue Haas Grotesk Display Pro","Neue Haas Grotesk Text Pro","Inter",Helvetica,Arial,sans-serif;
+  --pad:22px; --max:1140px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);background:var(--black);color:var(--g300);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased;padding-bottom:84px}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+section{padding:84px 0}
+.light{background:var(--white);color:#3a3a3a}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--g400)}
+.eyebrow::before{content:"";width:22px;height:1px;background:currentColor}
+.light .eyebrow{color:var(--g500)}
+h1,h2,h3{color:#fff;font-weight:700;letter-spacing:-.035em;line-height:1.02}
+.light h1,.light h2,.light h3{color:var(--ink)}
+h2{font-size:clamp(34px,9vw,60px);margin:16px 0 18px}
+h2 .mute,h1 .mute{color:var(--g500)}
+.lead{font-size:17px;max-width:600px;font-weight:400}
+.light .lead{color:#4a4a4a}
+
+/* Botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:56px;padding:0 28px;border-radius:999px;font-weight:600;font-size:15px;border:1px solid transparent;cursor:pointer;transition:background .2s,color .2s,transform .15s;font-family:var(--sans)}
+.btn:active{transform:scale(.98)}
+.btn svg{width:19px;height:19px;flex:none}
+.btn-white{background:#fff;color:var(--ink)}
+.btn-white:hover{background:var(--g100)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:#2a2a2a}
+.btn-line{background:transparent;border-color:var(--g700);color:#fff}
+.btn-line:hover{border-color:#fff}
+.light .btn-line{border-color:var(--g300);color:var(--ink)}
+.light .btn-line:hover{border-color:var(--ink)}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-wa:hover{background:var(--wa-d)}
+.micro{font-size:13px;color:var(--g500);margin-top:12px}
+
+/* Header */
+header{position:sticky;top:0;z-index:40;background:rgba(10,10,10,.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .3s}
+header.scrolled{border-bottom-color:var(--g800)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
+.logo img{height:38px;width:auto}
+.head-cta{font-size:13px;font-weight:600;color:#fff;border:1px solid var(--g700);padding:9px 16px;border-radius:999px}
+.head-cta:hover{border-color:#fff}
+
+/* Hero */
+.hero{padding:56px 0 72px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:-20% -40% auto auto;width:700px;height:700px;background:radial-gradient(closest-side,rgba(255,255,255,.07),transparent);pointer-events:none}
+.hero h1{font-size:clamp(44px,12.5vw,104px);margin:20px 0 24px;max-width:980px}
+.hero .lead{color:var(--g300);font-size:18px;margin-bottom:34px}
+.hero-grid{display:grid;gap:36px}
+.qual{background:var(--g900);border:1px solid var(--g800);border-radius:20px;padding:22px}
+.qual h3{font-size:20px;letter-spacing:-.02em;margin-bottom:4px}
+.qual p.s{font-size:14px;color:var(--g400);margin-bottom:18px}
+.field{margin-bottom:14px}
+.field label{display:block;font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--g500);margin-bottom:6px}
+.field input,.field select{width:100%;height:50px;border-radius:12px;border:1px solid var(--g700);background:var(--black);color:#fff;font:inherit;font-size:16px;padding:0 14px;-webkit-appearance:none;appearance:none}
+.field select{background-image:linear-gradient(45deg,transparent 50%,#888 50%),linear-gradient(135deg,#888 50%,transparent 50%);background-position:calc(100% - 20px) 22px,calc(100% - 15px) 22px;background-size:5px 5px;background-repeat:no-repeat}
+.field input:focus,.field select:focus{outline:none;border-color:#fff}
+.qual .micro{text-align:center}
+.proof-row{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:40px;padding-top:22px;border-top:1px solid var(--g800);font-size:13px;color:var(--g500)}
+.proof-row b{color:#fff;font-weight:600}
+
+
+/* Vídeo de fundo do hero */
+.hero-bg{position:absolute;inset:0;z-index:0;overflow:hidden}
+.hero-bg video{width:100%;height:100%;object-fit:cover;opacity:.22;filter:grayscale(1)}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,10,.35),rgba(10,10,10,.92) 75%,var(--black))}
+.hero .wrap{position:relative;z-index:1}
+
+/* Linha do tempo do mês */
+.month{margin-top:44px;background:var(--g900);border:1px solid var(--g800);border-radius:18px;padding:22px}
+.month-grid{display:grid;grid-template-columns:repeat(10,1fr);gap:6px;margin:16px 0 14px}
+.month-grid i{aspect-ratio:1;border-radius:6px;background:#2a2a2a;display:flex;align-items:center;justify-content:center;font-style:normal;font-size:10px;color:#666}
+.month-grid i.pre{background:#1b1b1b}
+.month-grid i.rec{background:#fff;color:var(--ink);font-weight:700}
+.month-grid i.on{background:#3a3a3a;color:#aaa}
+.month-legend{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:12px;color:var(--g400)}
+.month-legend span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px;background:#3a3a3a}
+.month-legend span.r::before{background:#fff}
+.month small{display:block;font-size:12px;color:var(--g500);margin-top:10px}
+
+/* Reels */
+.reels{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:36px}
+.reel-card{position:relative;aspect-ratio:9/16;border-radius:14px;overflow:hidden;background:var(--g900)}
+.reel-card video{width:100%;height:100%;object-fit:cover}
+.reel-card figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 14px 14px;background:linear-gradient(180deg,transparent,rgba(0,0,0,.85));font-size:13px;color:#fff;line-height:1.3}
+.reel-card figcaption b{display:block;font-size:15px;letter-spacing:-.01em}
+.reel-card figcaption span{color:var(--g400);font-size:12px}
+
+/* Capas */
+.covers{display:grid;grid-template-columns:1.1fr 1fr;gap:10px;margin-top:40px;align-items:stretch}
+.covers .rec-img{border-radius:14px;overflow:hidden;background:var(--g900)}
+.covers .rec-img img{width:100%;height:100%;object-fit:cover}
+.cap-card img{width:100%;border-radius:14px}
+.cover-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.cover-grid img{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:8px;background:var(--g900)}
+.cover-cap{font-size:13px;color:var(--g500);margin-top:12px}
+
+/* Depoimento em vídeo */
+.testi figcaption{display:flex;gap:14px;align-items:center}
+
+
+/* Resultado */
+.funnel{display:grid;gap:12px;margin-top:40px}
+.fstep{background:var(--g900);border:1px solid var(--g800);border-radius:18px;padding:26px 22px;position:relative}
+.fstep .fn{font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--g500)}
+.fstep b{display:block;color:#fff;font-size:22px;letter-spacing:-.02em;line-height:1.15;margin:10px 0 8px}
+.fstep span:last-child{font-size:15px}
+.outcomes{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--g800);border:1px solid var(--g800);border-radius:18px;overflow:hidden;margin-top:14px}
+.outcomes div{background:var(--black);padding:22px 18px}
+.outcomes b{display:block;color:#fff;font-size:17px;letter-spacing:-.01em;margin-bottom:4px}
+.outcomes span{font-size:14px;color:var(--g400)}
+.feats-solo{max-width:820px}
+.team{margin-top:40px;border-bottom:1px solid var(--g800)}
+.team img{width:100%;max-width:980px;margin:0 auto}
+.bts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
+.bts img{width:100%;height:100%;object-fit:cover;border-radius:12px;aspect-ratio:4/5}
+.bts img:first-child{grid-column:span 2;aspect-ratio:16/10}
+
+
+/* Shorts */
+.shorts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:36px;max-width:760px}
+.short{position:relative;aspect-ratio:9/16;border-radius:16px;overflow:hidden;background:var(--g900);cursor:pointer}
+.short img{width:100%;height:100%;object-fit:cover;transition:transform .8s ease}
+.short:hover img{transform:scale(1.03)}
+.short::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(0,0,0,.85));pointer-events:none}
+.short .play{position:absolute;z-index:2;left:50%;top:50%;transform:translate(-50%,-50%);width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,.95);display:flex;align-items:center;justify-content:center}
+.short .play::before{content:"";border-left:15px solid var(--ink);border-top:9px solid transparent;border-bottom:9px solid transparent;margin-left:4px}
+.short figcaption{position:absolute;z-index:2;left:16px;right:16px;bottom:16px;color:#fff;line-height:1.3}
+.short figcaption b{display:block;font-size:16px}
+.short figcaption span{font-size:13px;color:var(--g300)}
+.short iframe{position:absolute;inset:0;width:100%;height:100%;border:0;z-index:3}
+
+/* Dor */
+.pains{display:grid;gap:12px;margin-top:40px}
+.pain{border:1px solid var(--g100);border-radius:16px;padding:24px 22px;background:#fff}
+.pain .x{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--g500)}
+.pain b{display:block;font-size:20px;color:var(--ink);letter-spacing:-.02em;margin:6px 0 6px;line-height:1.2}
+.pain span{font-size:15px}
+.turn{margin-top:46px;font-size:clamp(24px,6.4vw,38px);font-weight:600;letter-spacing:-.03em;line-height:1.2;color:var(--ink);max-width:860px}
+.turn .mute{color:var(--g500)}
+
+/* Como funciona */
+.steps{list-style:none;margin-top:44px;display:grid;gap:0;border-top:1px solid var(--g800)}
+.steps li{display:grid;grid-template-columns:52px 1fr;gap:10px;padding:24px 0;border-bottom:1px solid var(--g800)}
+.steps .n{font-size:13px;font-weight:700;color:var(--g500);padding-top:4px}
+.steps b{display:block;font-size:20px;color:#fff;letter-spacing:-.02em;margin-bottom:6px}
+.steps span{font-size:15px}
+.big-stat{margin-top:48px;display:grid;gap:12px}
+.stat{background:var(--g900);border:1px solid var(--g800);border-radius:16px;padding:22px}
+.stat strong{display:block;font-size:44px;color:#fff;letter-spacing:-.04em;line-height:1}
+.stat span{font-size:14px;color:var(--g400)}
+
+/* Portfólio */
+.reel{position:relative;aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:var(--g900);margin-top:36px}
+.reel iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:var(--g500);font-size:13px;text-align:center;padding:20px;background:repeating-linear-gradient(135deg,#141414 0 14px,#171717 14px 28px)}
+.ph .play{width:64px;height:64px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center}
+.ph .play::before{content:"";border-left:15px solid var(--ink);border-top:9px solid transparent;border-bottom:9px solid transparent;margin-left:4px}
+.clients{margin-top:44px;padding-top:26px;border-top:1px solid var(--g800)}
+.clients p{font-size:11px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--g500);margin-bottom:16px}
+.logo-wall{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:30px 34px}
+.logo-wall img{max-height:38px;max-width:100%;width:auto;object-fit:contain;opacity:.85}
+.client-list{display:flex;flex-wrap:wrap;gap:10px 30px;font-size:clamp(18px,4.8vw,24px);font-weight:700;letter-spacing:-.03em;color:#5d5d5d}
+
+/* Planos */
+.plans{display:grid;gap:16px;margin-top:44px}
+.plan{border:1px solid var(--g100);border-radius:22px;padding:30px 24px;background:#fff;display:flex;flex-direction:column;position:relative}
+.plan.featured{background:var(--ink);border-color:var(--ink);color:var(--g300)}
+.plan .tag{position:absolute;top:22px;right:22px;font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;background:#fff;color:var(--ink);padding:6px 10px;border-radius:999px}
+.plan .name{font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--g500)}
+.plan .qty{font-size:56px;font-weight:700;letter-spacing:-.05em;color:var(--ink);line-height:1;margin:14px 0 2px}
+.plan.featured .qty{color:#fff}
+.plan .qty small{font-size:18px;letter-spacing:-.01em;font-weight:600;color:var(--g500);margin-left:6px}
+.plan .for{font-size:14px;color:var(--g500);margin-bottom:22px}
+.plan .price{padding:18px 0;border-top:1px solid var(--g100);border-bottom:1px solid var(--g100);margin-bottom:8px}
+.plan.featured .price{border-color:var(--g800)}
+.plan .price strong{font-size:38px;font-weight:700;letter-spacing:-.04em;color:var(--ink)}
+.plan.featured .price strong{color:#fff}
+.plan .price span{font-size:15px;color:var(--g500);font-weight:500}
+.plan ul{list-style:none;flex:1;margin-bottom:24px}
+.plan li{font-size:15px;padding:10px 0 10px 26px;position:relative;border-bottom:1px solid #f1f1ef}
+.plan.featured li{border-color:var(--g800)}
+.plan li:last-child{border-bottom:0}
+.plan li::before{content:"";position:absolute;left:2px;top:17px;width:11px;height:6px;border-left:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(-45deg);opacity:.55}
+.plan li b{color:var(--ink);font-weight:600}
+.plan.featured li b{color:#fff}
+.plan.featured .btn-white{background:#fff}
+.bold-plan{margin-top:16px;border-radius:22px;background:var(--black);color:var(--g300);padding:30px 24px;display:grid;gap:18px;align-items:center}
+.bold-plan h3,.light .bold-plan h3{font-size:26px;letter-spacing:-.03em;color:#fff;margin-bottom:6px}
+.bold-plan p{font-size:15px}
+.bold-list{list-style:none;display:grid;gap:6px 22px;margin-top:16px}
+.bold-list li{font-size:15px;color:#fff;padding-left:22px;position:relative}
+.bold-list li::before{content:"";position:absolute;left:0;top:9px;width:10px;height:5px;border-left:2px solid #fff;border-bottom:2px solid #fff;transform:rotate(-45deg)}
+.plans-note{font-size:14px;color:var(--g500);margin-top:22px;max-width:680px}
+
+/* Bastidores */
+.crew{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:40px}
+.crew img{width:100%;height:100%;object-fit:cover;border-radius:10px}
+.crew .a{grid-row:span 2}
+.feats{list-style:none;margin-top:34px;border-top:1px solid var(--g800)}
+.feats li{padding:20px 0;border-bottom:1px solid var(--g800);font-size:15px}
+.feats b{display:block;color:#fff;font-size:19px;letter-spacing:-.02em;margin-bottom:4px}
+
+/* Depoimentos */
+.testis{display:grid;gap:14px;margin-top:40px}
+.testi{background:#fff;border:1px solid var(--g100);border-radius:18px;padding:26px 22px}
+.testi blockquote{font-size:18px;line-height:1.5;color:var(--ink);font-weight:500;letter-spacing:-.01em;margin-bottom:18px}
+.testi figcaption b{display:block;color:var(--ink);font-size:15px}
+.testi figcaption span{font-size:13px;color:var(--g500)}
+
+/* FAQ */
+.faq{margin-top:30px;border-top:1px solid var(--g800)}
+.faq details{border-bottom:1px solid var(--g800)}
+.faq summary{list-style:none;cursor:pointer;padding:22px 40px 22px 0;font-size:18px;font-weight:600;color:#fff;position:relative;letter-spacing:-.01em}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:4px;top:16px;font-size:26px;font-weight:300;color:var(--g500);transition:transform .25s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq p{padding:0 0 22px;font-size:15px;max-width:680px}
+
+/* Final */
+.final{text-align:left;padding:110px 0}
+.final h2{font-size:clamp(42px,11.5vw,84px)}
+.final .lead{margin-bottom:32px}
+
+footer{border-top:1px solid var(--g800);padding:36px 0 44px;font-size:13px;color:var(--g500)}
+footer .wrap{display:flex;flex-direction:column;gap:6px}
+footer img{height:96px;width:auto;margin-bottom:12px}
+footer a{color:#fff}
+
+/* WhatsApp fixo */
+.wa-bar{position:fixed;left:0;right:0;bottom:0;z-index:50;padding:12px var(--pad) calc(12px + env(safe-area-inset-bottom));background:rgba(10,10,10,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid var(--g800);transition:transform .3s}
+.wa-bar .btn{min-height:52px}
+.wa-float{display:none}
+
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+@media (min-width:720px){
+  :root{--pad:44px}
+  section{padding:124px 0}
+  .btn{width:auto}
+  .pains{grid-template-columns:repeat(3,1fr)}
+  .steps{grid-template-columns:repeat(4,1fr);gap:28px;border-top:0}
+  .steps li{grid-template-columns:1fr;border-bottom:0;border-top:1px solid var(--g700);padding-top:20px}
+  .big-stat{grid-template-columns:repeat(3,1fr)}
+  .plans{grid-template-columns:repeat(3,1fr)}
+  .bold-plan{grid-template-columns:1fr auto;padding:40px 44px}
+  .bold-list{grid-template-columns:repeat(3,auto);justify-content:start}
+  .testis{grid-template-columns:repeat(3,1fr)}
+  .funnel{grid-template-columns:repeat(3,1fr)}
+  .logo-wall{gap:44px 64px}
+  .bts{grid-template-columns:1.4fr 1fr 1fr}
+  .bts img,.bts img:first-child{grid-column:auto;aspect-ratio:4/5}
+  .logo-wall img{max-height:46px}
+  .outcomes{grid-template-columns:repeat(4,1fr)}
+  .month-grid{grid-template-columns:repeat(30,1fr)}
+  .cover-grid{grid-template-columns:repeat(6,1fr)}
+  .covers{grid-template-columns:1fr 2.2fr}
+  .crew-wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:center}
+  .crew{margin-top:0}
+}
+@media (min-width:960px){
+  body{padding-bottom:0}
+  .wa-bar{display:none}
+  .wa-float{display:flex;position:fixed;right:28px;bottom:28px;z-index:50;align-items:center;gap:10px;background:var(--wa);color:#fff;font-weight:600;font-size:14px;padding:14px 22px 14px 18px;border-radius:999px;box-shadow:0 14px 34px -10px rgba(0,0,0,.6);transition:background .2s,transform .2s}
+  .wa-float:hover{background:var(--wa-d);transform:translateY(-2px)}
+  .wa-float svg{width:22px;height:22px}
+  .hero-grid{grid-template-columns:1.35fr 1fr;align-items:end;gap:56px}
+  .plan.featured{transform:translateY(-12px)}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.22-8.24 8.22Zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.29Z"/></symbol>
+</svg>
+
+<header id="hdr">
+  <div class="wrap">
+    <a href="#topo" class="logo" aria-label="Bold Films"><img src="img/logo-mark.png" alt="Bold Films"></a>
+    <a href="#" class="head-cta js-wa" data-origem="header">Falar com a Bold</a>
+  </div>
+</header>
+
+<main id="topo">
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"><video autoplay muted loop playsinline preload="auto" src="https://bold-films.vercel.app/midia/fundo-plano-mensal.mp4"></video></div>
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <span class="eyebrow">Vídeo estratégico para empresas</span>
+      <h1>Vídeo que gera cliente. <span class="mute">Não só curtida.</span></h1>
+      <p class="lead">A Bold Films transforma a autoridade que a sua empresa já tem na prática em imagem que gera confiança, procura e venda. Estratégia, gravação e edição de cinema, todo mês, com um objetivo claro: fazer o seu negócio crescer.</p>
+    </div>
+
+    <form class="qual reveal" id="qualForm" novalidate>
+      <h3>Quero mais resultado com vídeo</h3>
+      <p class="s">Conte sobre a sua empresa. A gente responde no WhatsApp com o plano ideal para o seu objetivo.</p>
+      <div class="field">
+        <label for="f-empresa">Empresa ou marca</label>
+        <input id="f-empresa" type="text" placeholder="Nome da empresa" autocomplete="organization">
+      </div>
+      <div class="field">
+        <label for="f-seg">Segmento</label>
+        <select id="f-seg">
+          <option value="">Selecione</option>
+          <option>Saúde (clínica, consultório)</option>
+          <option>Imobiliário (imobiliária, construtora, corretor)</option>
+          <option>Advocacia e serviços profissionais</option>
+          <option>Comércio e varejo</option>
+          <option>Indústria e serviços</option>
+          <option>Outro</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="f-cidade">Cidade</label>
+        <input id="f-cidade" type="text" placeholder="Ex.: Itaberaba" autocomplete="address-level2">
+      </div>
+      <button type="submit" class="btn btn-white" style="width:100%"><svg><use href="#wa"/></svg> Falar com um estrategista</button>
+      <p class="micro">Atendimento direto com os sócios. Sem robô.</p>
+    </form>
+  </div>
+  <div class="wrap">
+    <div class="proof-row reveal">
+      <span><b>Já filmamos para</b> Cyrela · Hospital INCAR · Grupo Lara · Labocliv · Grupo Ivan</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DOR ================= -->
+<section class="light">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">O problema</span>
+      <h2>Sua empresa é boa. <span class="mute">Mas quem ainda não te conhece não sabe disso.</span></h2>
+    </div>
+    <div class="pains reveal">
+      <div class="pain"><span class="x">01</span><b>Imagem amadora derruba o seu preço</b><span>Quando o vídeo parece amador, o cliente acha que o serviço também é. E passa a negociar valor.</span></div>
+      <div class="pain"><span class="x">02</span><b>Quem some da tela perde a venda</b><span>Sem constância, o cliente esquece de você e fecha com o concorrente que apareceu na hora certa.</span></div>
+      <div class="pain"><span class="x">03</span><b>Conteúdo bonito que não vende</b><span>Vídeo sem estratégia gera curtida, não gera cliente. Cada vídeo precisa ter uma função no seu funil.</span></div>
+    </div>
+    <p class="turn reveal">Vídeo não é custo de marketing. <span class="mute">É o que faz o cliente confiar em você antes mesmo da primeira conversa.</span></p>
+  </div>
+</section>
+
+<!-- ================= RESULTADO ================= -->
+<section>
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">O que você compra de verdade</span>
+      <h2>Não é pacote de vídeo. <span class="mute">É crescimento.</span></h2>
+      <p class="lead">Cada vídeo que a Bold produz tem uma função no seu negócio. Juntos, eles constroem o caminho do desconhecido até o cliente fechado.</p>
+    </div>
+    <div class="funnel reveal">
+      <div class="fstep"><span class="fn">01 · Atrair</span><b>Ser visto por quem importa</b><span>Vídeos que param a rolagem e colocam a sua marca na frente do cliente certo.</span></div>
+      <div class="fstep"><span class="fn">02 · Convencer</span><b>Virar referência na cabeça do cliente</b><span>Bastidores, processos e especialidade mostrados com imagem de cinema. O cliente percebe valor antes de perguntar o preço.</span></div>
+      <div class="fstep"><span class="fn">03 · Converter</span><b>Transformar atenção em conversa</b><span>Conteúdo que responde objeções e leva o cliente direto para o seu WhatsApp, mais pronto para fechar.</span></div>
+    </div>
+    <div class="outcomes reveal">
+      <div><b>Mais autoridade</b><span>A sua empresa passa a ser vista como a referência que já é.</span></div>
+      <div><b>Cliente mais qualificado</b><span>Quem chega já confia em você e conhece o seu trabalho.</span></div>
+      <div><b>Preço valorizado</b><span>Imagem premium sustenta um ticket mais alto, sem precisar dar desconto.</span></div>
+      <div><b>Lembrança constante</b><span>Presença toda semana, para ser a primeira opção quando o cliente decidir.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COMO FUNCIONA ================= -->
+<section>
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Como funciona</span>
+      <h2>Um dia de gravação. <span class="mute">Um mês trabalhando por você.</span></h2>
+      <p class="lead">Você não precisa gravar toda semana. Um encontro resolve o conteúdo do mês inteiro.</p>
+    </div>
+    <ol class="steps reveal">
+      <li><span class="n">01</span><div><b>Estratégia</b><span>Definimos o objetivo do mês (vender um serviço, encher a agenda, lançar um produto) e o papel de cada vídeo.</span></div></li>
+      <li><span class="n">02</span><div><b>Um dia de gravação</b><span>Em uma única diária, gravamos todos os vídeos do mês e as fotos profissionais.</span></div></li>
+      <li><span class="n">03</span><div><b>Edição e capas</b><span>Cada vídeo editado com ritmo, cor de cinema e capa personalizada com as suas fotos.</span></div></li>
+      <li><span class="n">04</span><div><b>Entrega o mês todo</b><span>Tudo chega pronto para publicar ao longo do mês. No mês seguinte, um novo encontro.</span></div></li>
+    </ol>
+    <div class="month reveal">
+      <span class="eyebrow">Um dia por mês</span>
+      <div class="month-grid" aria-hidden="true"><i class="pre">1</i><i class="pre">2</i><i class="rec">3</i><i class="on">4</i><i class="on">5</i><i class="on">6</i><i class="on">7</i><i class="on">8</i><i class="on">9</i><i class="on">10</i><i class="on">11</i><i class="on">12</i><i class="on">13</i><i class="on">14</i><i class="on">15</i><i class="on">16</i><i class="on">17</i><i class="on">18</i><i class="on">19</i><i class="on">20</i><i class="on">21</i><i class="on">22</i><i class="on">23</i><i class="on">24</i><i class="on">25</i><i class="on">26</i><i class="on">27</i><i class="on">28</i><i class="on">29</i><i class="on">30</i></div>
+      <div class="month-legend"><span class="r">Dia de gravação</span><span>Conteúdo publicado ao longo do mês</span></div>
+      <small>O dia da gravação é combinado com você.</small>
+    </div>
+    <div class="big-stat reveal">
+      <div class="stat"><strong>1 dia</strong><span>de gravação por mês, sem tomar a sua agenda</span></div>
+      <div class="stat"><strong>Até 10</strong><span>vídeos prontos por mês, conforme o plano</span></div>
+      <div class="stat"><strong>+ fotos</strong><span>profissionais e capas personalizadas inclusas</span></div>
+    </div>
+    <div class="covers reveal">
+      <div class="rec-img"><img src="img/equipe/set-escritorio.webp" alt="Set de gravação montado no escritório da cliente" loading="lazy"></div>
+      <div class="cap-card">
+        <img src="img/capas-lays.webp" alt="Capas de reels criadas pela Bold Films para a Dra. Lays Neves" loading="lazy">
+        <p class="cover-cap"><b style="color:#fff">Foto e design inclusos.</b> Capas criadas para a Dra. Lays Neves a partir das fotos do próprio dia de gravação.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CLIENTES ================= -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="clients reveal">
+      <p>Marcas que já confiaram na Bold</p>
+      <div class="logo-wall"><img src="img/clientes/cyrela.png" alt="Cyrela" loading="lazy"><img src="img/clientes/hyundai.svg" alt="Hyundai" loading="lazy"><img src="img/clientes/hospital-incar.png" alt="Hospital INCAR" loading="lazy"><img src="img/clientes/grupo-lara.png" alt="Grupo Lara" loading="lazy"><img src="img/clientes/labocliv.png" alt="Rede Labocliv" loading="lazy"><img src="img/clientes/grupo-zen.png" alt="Grupo Zen" loading="lazy"><img src="img/clientes/grupo-ivan.png" alt="Grupo Ivan" loading="lazy"><img src="img/clientes/ita-consorcios.png" alt="Ita Consórcios" loading="lazy"><img src="img/clientes/ironberg.png" alt="Ironberg" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PORTFÓLIO ================= -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Portfólio</span>
+      <h2>Reels que constroem <span class="mute">autoridade.</span></h2>
+      <p class="lead">Dois exemplos de clientes do plano mensal. Toque para assistir.</p>
+    </div>
+    <div class="shorts reveal">
+      <figure class="short" data-id="IWFwRJPKN90" role="button" tabindex="0" aria-label="Assistir reels da Dra. Lays Neves">
+        <img class="yt-thumb" src="https://i.ytimg.com/vi/IWFwRJPKN90/oardefault.jpg" alt="Reels da Dra. Lays Neves" loading="lazy">
+        <span class="play"></span>
+        <figcaption><b>Dra. Lays Neves</b><span>Advocacia previdenciária</span></figcaption>
+      </figure>
+      <figure class="short" data-id="GZFL8gwlzV4" role="button" tabindex="0" aria-label="Assistir reels do Dr. Marcos sobre menopausa">
+        <img class="yt-thumb" src="https://i.ytimg.com/vi/GZFL8gwlzV4/oardefault.jpg" alt="Reels do Dr. Marcos sobre menopausa" loading="lazy">
+        <span class="play"></span>
+        <figcaption><b>Dr. Marcos</b><span>Reels sobre menopausa</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PLANOS ================= -->
+<section class="light" id="planos">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Planos mensais</span>
+      <h2>Escolha o ritmo <span class="mute">de crescimento.</span></h2>
+      <p class="lead">Todos os planos têm o mesmo padrão de imagem e o mesmo foco em resultado. O que muda é a frequência com que a sua marca aparece para o cliente.</p>
+    </div>
+
+    <div class="plans reveal">
+      <article class="plan">
+        <span class="name">Presença</span>
+        <div class="qty">4<small>vídeos/mês</small></div>
+        <p class="for">Para começar a construir autoridade com constância.</p>
+        <div class="price"><strong>R$ 1.897</strong> <span>/mês</span></div>
+        <ul>
+          <li><b>4 vídeos</b> editados por mês</li>
+          <li>Vídeos planejados para o seu objetivo comercial</li>
+          <li>1 diária de gravação no mês</li>
+          <li>Fotos profissionais para as capas</li>
+          <li>Capas personalizadas para os vídeos</li>
+          <li>Entregas ao longo do mês</li>
+        </ul>
+        <a href="#" class="btn btn-line js-wa" data-origem="plano-4" data-pacote="Presença (4 vídeos/mês)">Quero o Presença</a>
+      </article>
+
+      <article class="plan featured">
+        <span class="tag">Mais escolhido</span>
+        <span class="name">Crescimento</span>
+        <div class="qty">6<small>vídeos/mês</small></div>
+        <p class="for">Para ser lembrado toda semana e gerar procura.</p>
+        <div class="price"><strong>R$ 2.587</strong> <span>/mês</span></div>
+        <ul>
+          <li><b>6 vídeos</b> editados por mês</li>
+          <li>Vídeos planejados para o seu objetivo comercial</li>
+          <li>1 diária de gravação no mês</li>
+          <li>Fotos profissionais para as capas</li>
+          <li>Capas personalizadas para os vídeos</li>
+          <li>Entregas ao longo do mês</li>
+        </ul>
+        <a href="#" class="btn btn-white js-wa" data-origem="plano-6" data-pacote="Crescimento (6 vídeos/mês)"><svg><use href="#wa"/></svg> Quero o Crescimento</a>
+      </article>
+
+      <article class="plan">
+        <span class="name">Autoridade</span>
+        <div class="qty">10<small>vídeos/mês</small></div>
+        <p class="for">Para dominar a atenção do seu mercado.</p>
+        <div class="price"><strong>R$ 3.987</strong> <span>/mês</span></div>
+        <ul>
+          <li><b>10 vídeos</b> editados por mês</li>
+          <li>Vídeos planejados para o seu objetivo comercial</li>
+          <li>1 diária de gravação no mês</li>
+          <li>Fotos profissionais para as capas</li>
+          <li>Capas personalizadas para os vídeos</li>
+          <li>Entregas ao longo do mês</li>
+        </ul>
+        <a href="#" class="btn btn-line js-wa" data-origem="plano-10" data-pacote="Autoridade (10 vídeos/mês)">Quero o Autoridade</a>
+      </article>
+    </div>
+
+    <div class="bold-plan reveal">
+      <div>
+        <span class="name" style="color:var(--g400);font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase">Plano Bold</span>
+        <h3 style="margin-top:8px">Marketing completo para a sua empresa.</h3>
+        <p>Para quem quer um departamento de marketing inteiro, sem montar equipe. A Bold cuida da estratégia à venda.</p>
+        <ul class="bold-list">
+          <li>Social media completo</li>
+          <li>Mais de 10 vídeos por mês</li>
+          <li>Gestão de tráfego pago</li>
+          <li>Fotos e artes para as redes</li>
+          <li>Estratégia e planejamento mensal</li>
+        </ul>
+      </div>
+      <a href="#" class="btn btn-white js-wa" data-origem="plano-bold" data-msg="Olá, Bold Films! Quero conhecer o Plano Bold, com marketing completo para a minha empresa.">Quero o marketing completo</a>
+    </div>
+    <p class="plans-note">Planos com atendimento nas regiões de Itaberaba e Santo Antônio de Jesus. Para outras cidades, o deslocamento é combinado na proposta.</p>
+  </div>
+</section>
+
+<!-- ================= BASTIDORES ================= -->
+<section>
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Por que a Bold</span>
+      <h2>Direção criativa <span class="mute">com foco em venda.</span></h2>
+    </div>
+    <figure class="team reveal"><img src="img/equipe/time.webp" alt="Equipe Bold Films" loading="lazy"></figure>
+    <div class="bts reveal">
+      <img src="img/equipe/set-estrada.webp" alt="Sócios da Bold Films no set" loading="lazy">
+      <img src="img/equipe/set-camera.webp" alt="Cinegrafista da Bold Films em gravação" loading="lazy">
+      <img src="img/equipe/set-interno.webp" alt="Bastidores de gravação em ambiente interno" loading="lazy">
+    </div>
+    <div class="feats-solo" style="margin-top:20px">
+      <ul class="feats reveal">
+        <li><b>Entendemos o seu negócio antes de gravar</b>Cada vídeo nasce de uma pergunta: o que o seu cliente precisa ver para fechar com você?</li>
+        <li><b>Estética de cinema</b>Sony FX30 Cinema Line, drones DJI, áudio profissional e iluminação. A imagem à altura da sua marca.</li>
+        <li><b>Equipe dos próprios sócios</b>Quem planeja é quem grava. Sem terceirizar a sua imagem para quem não conhece o seu negócio.</li>
+        <li><b>Você não perde tempo</b>Uma diária por mês e pronto. O resto é com a gente.</li>
+        <li><b>Marcas que já são referência confiam na Bold</b>Cyrela, Hospital INCAR, Grupo Lara e outras marcas que não podem arriscar a própria imagem.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DEPOIMENTOS ================= -->
+<section class="light">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Depoimentos</span>
+      <h2>Quem contratou <span class="mute">conta como foi.</span></h2>
+    </div>
+    <div class="testis reveal">
+      <figure class="testi"><blockquote>“Depois que iniciamos a produção de conteúdo, meu perfil profissional ganhou outra visibilidade e outra autoridade.”</blockquote><figcaption><div><b>Dra. Lays Neves</b><span>Advogada previdenciária</span></div></figcaption></figure>
+      <figure class="testi"><blockquote>“Se tivesse que colocar aqui algumas estrelinhas, eu colocaria cinco estrelinhas para ele, porque realmente estou bastante satisfeito.”</blockquote><figcaption><div><b>Dr. José Marcos Neves</b><span>Cliente Bold Films</span></div></figcaption></figure>
+      <figure class="testi"><blockquote>“Fiquei muito satisfeito, muito contente com toda a paciência que eles tiveram com a equipe. Foi uma semana gravando com a gente.”</blockquote><figcaption><div><b>Ivan</b><span>Grupo Ivan</span></div></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section>
+  <div class="wrap" style="max-width:820px">
+    <div class="reveal">
+      <span class="eyebrow">Dúvidas</span>
+      <h2>Perguntas <span class="mute">frequentes.</span></h2>
+    </div>
+    <div class="faq reveal">
+      <details><summary>Como sei se está dando resultado?</summary><p>Cada mês começa com um objetivo claro, e os vídeos são pensados para ele. Acompanhamos com você a procura, as mensagens e o desempenho do conteúdo para ajustar o próximo mês.</p></details>
+      <details><summary>Preciso aparecer nos vídeos?</summary><p>Não necessariamente. Montamos o conteúdo com você, sua equipe, seu espaço ou seus produtos, conforme o que fizer mais sentido para o seu negócio e para o seu conforto.</p></details>
+      <details><summary>Quanto tempo leva a gravação?</summary><p>Uma diária por mês. Todo o conteúdo do mês é gravado nesse dia, para não atrapalhar a sua rotina.</p></details>
+      <details><summary>Como os vídeos são entregues?</summary><p>Prontos para postar, ao longo do mês, com capas personalizadas feitas a partir das fotos profissionais do dia de gravação.</p></details>
+      <details><summary>Tem contrato mínimo?</summary><p>Sim. Trabalhamos com contratos de 6 meses ou de 1 ano. Resultado com vídeo vem da constância: é a presença semana após semana que constrói autoridade e faz o cliente lembrar de você na hora de decidir. Não é algo que se faz uma vez e pronto.</p></details>
+      <details><summary>Vocês atendem fora de Itaberaba e Santo Antônio de Jesus?</summary><p>Sim. Nessas duas regiões o plano funciona com a mensalidade padrão. Para outras cidades, o deslocamento entra na proposta.</p></details>
+      <details><summary>Posso mudar de plano depois?</summary><p>Sim. Se o seu negócio pedir mais conteúdo, é só subir de plano.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FINAL ================= -->
+<section class="final light">
+  <div class="wrap">
+    <span class="eyebrow reveal">Agenda limitada por mês</span>
+    <h2 class="reveal">Sua empresa já é referência. <span class="mute">Agora precisa parecer, e vender por isso.</span></h2>
+    <p class="lead reveal">Atendemos poucas empresas por vez, para manter o padrão e acompanhar o resultado de perto. Vamos conversar sobre o seu objetivo.</p>
+    <a href="#" class="btn btn-dark js-wa reveal" data-origem="final"><svg><use href="#wa"/></svg> Quero vender mais com vídeo</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="img/logo-selo.png" alt="Bold Films · Produtora Audiovisual">
+    <span><a href="https://bold-films.vercel.app/" target="_blank" rel="noopener">Site</a> · <a href="https://instagram.com/boldfilmsbr" target="_blank" rel="noopener">@boldfilmsbr</a> · comercial@boldfilms.com · (75) 99189-6051</span>
+    <span>R. Lauro Farâni de Freitas, 623 · Itaberaba, BA · CNPJ 48.301.315/0001-03</span>
+    <span>Produtora audiovisual · Bahia e São Paulo · © <span id="ano"></span> Bold Films</span>
+  </div>
+</footer>
+
+<div class="wa-bar"><a href="#" class="btn btn-wa js-wa" data-origem="fixo-mobile" style="width:100%"><svg><use href="#wa"/></svg> Falar com a Bold no WhatsApp</a></div>
+<a href="#" class="wa-float js-wa" data-origem="fixo-desktop" aria-label="Falar no WhatsApp"><svg><use href="#wa"/></svg> Falar com a Bold</a>
+
+<script>
+const WHATSAPP = "5575991896051";
+const MSG_PADRAO = "Olá, Bold Films! Quero entender como a Bold pode trazer mais resultado para a minha empresa com vídeo.";
+const waLink = m => `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(m)}`;
+function track(o){ try{ if(window.fbq) fbq('track','Contact',{content_name:o}); }catch(e){} try{ if(window.gtag) gtag('event','whatsapp_click',{origem:o}); }catch(e){} }
+
+document.querySelectorAll('.js-wa').forEach(el=>{
+  let msg = el.dataset.msg || MSG_PADRAO;
+  if (el.dataset.pacote) msg = `Olá, Bold Films! Tenho interesse no plano ${el.dataset.pacote} para a minha empresa. Podemos conversar?`;
+  el.href = waLink(msg); el.target="_blank"; el.rel="noopener";
+  el.addEventListener('click',()=>track(el.dataset.origem||'link'));
+});
+
+document.getElementById('qualForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  const emp=document.getElementById('f-empresa').value.trim();
+  const seg=document.getElementById('f-seg').value;
+  const cid=document.getElementById('f-cidade').value.trim();
+  let msg="Olá, Bold Films! Quero mais resultado para a minha empresa com vídeo.";
+  if(emp) msg+=`\nEmpresa: ${emp}`;
+  if(seg) msg+=`\nSegmento: ${seg}`;
+  if(cid) msg+=`\nCidade: ${cid}`;
+  track('hero-form');
+  window.open(waLink(msg),'_blank','noopener');
+});
+
+
+
+/* Capa dos reels: se a capa vertical ainda não existir no YouTube, usa um frame do vídeo */
+document.querySelectorAll('.short img.yt-thumb').forEach(img=>{
+  const id=img.closest('.short').dataset.id, alts=['frame0','hqdefault'];
+  const next=()=>{ const t=alts.shift(); if(t) img.src=`https://i.ytimg.com/vi/${id}/${t}.jpg`; };
+  img.addEventListener('load',()=>{ if(img.naturalWidth<=120) next(); });
+  img.addEventListener('error',next);
+  if(img.complete && img.naturalWidth && img.naturalWidth<=120) next();
+});
+document.querySelectorAll('.short').forEach(box=>{
+  const play=()=>{ if(box.querySelector('iframe')) return;
+    box.insertAdjacentHTML('beforeend',`<iframe src="https://www.youtube-nocookie.com/embed/${box.dataset.id}?autoplay=1&playsinline=1&rel=0&modestbranding=1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture" allowfullscreen title="Reels Bold Films"></iframe>`);
+    track('portfolio-'+box.dataset.id); };
+  box.addEventListener('click',play);
+  box.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); play(); } });
+});
+const hdr=document.getElementById('hdr');
+addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>10),{passive:true});
+const bar=document.querySelector('.wa-bar');
+if('IntersectionObserver' in window){
+  new IntersectionObserver(([en])=>{ bar.style.transform=en.isIntersecting?'translateY(110%)':'translateY(0)'; },{threshold:.3}).observe(document.getElementById('qualForm'));
+  const io=new IntersectionObserver(es=>es.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target);} }),{threshold:.1});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+} else document.querySelectorAll('.reveal').forEach(el=>el.classList.add('in'));
+document.getElementById('ano').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
